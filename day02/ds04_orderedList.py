@@ -1,5 +1,5 @@
 # date : 20240213
-# file : ds03_orderedList.piynb
+# file : ds03_orderedList.ipynb
 # desc : 선형 리스트 프로그램
 
 ## 데이터 추가 함수

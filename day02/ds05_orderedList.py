@@ -1,5 +1,5 @@
 # date : 20240213
-# file : ds05_orderedList.piynb
+# file : ds05_orderedList.ipynb
 # desc : 선형 리스트 표현과 계산 프로그램
 
 def printPoly(p_x):
@@ -62,7 +62,7 @@ def calcPoly(xVal, t_x, p_x) :
 
     for i in range(len (px)) :
         term = t_x[i] # 항 차수
-        coef = p_[i] # 계수
+        coef = p_x[i] # 계수
         retValue += coef * xValue ** term
 
 
