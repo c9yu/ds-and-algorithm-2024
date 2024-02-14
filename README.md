@@ -27,6 +27,8 @@
     - 스택 : last in fist out (lifo)
         - 한쪽 끝이 막힌 형태
         - 입구가 하나 (선입후출, 후입선출)
+        - pop - list.pop()
+        - push - list.append() 와 동일
     - 큐 : first in first out (fifo)
     - 트리
     - 그래프
