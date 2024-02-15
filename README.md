@@ -34,7 +34,7 @@
         - push - list.append() 와 동일
     - 큐 : first in first out (fifo)
 
-        ![stack](https://upload.wikimedia.org/wikipedia/commons/6/6d/QUEUE.png)
+        ![stack](https://raw.githubusercontent.com/c9yu/ds-and-algorithm-2024/main/images/img001.png)
 
     - 트리
     - 그래프
