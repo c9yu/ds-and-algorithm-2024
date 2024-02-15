@@ -4,12 +4,20 @@
 
 # Queue 풀 확인 함수
 def isQueueFull():
-    global SIZE, rear
-    if rear == (SIZE - 1):
-        return True
-    else:
+    global SIZE, queue, front, rear
+    if rear != (SIZE - 1): # 큐가 아직 빈상태
         return False
-    
+    elif rear == (SIZE - 1) and front == -1: # 큐가 꽉 찬 상태
+        return True
+    else: # 큐가 앞쪽이 비어있는 상태, rear가 끝까지 간 상태
+        while front != -1:
+            for i in range(front+1, SIZE):
+                queue[i-1] = queue[i] # front에다가 front + 1의 값을 할당한다.
+                queue[i] = None
+            front -= 1
+            rear -= 1
+        return False
+
 # Queue 엠티 확인 함수
 def isQueueEmpty():
     global SIZE, rear
@@ -50,15 +58,16 @@ def peek():
         return queue[front + 1]
 
 # 전역변수
-SIZE = int(input('큐 크기 입력(정수) > ')) # 상수(constant)
+SIZE = 5 #int(input('큐 크기 입력(정수) > ')) # 상수(constant)
 queue = [None for _ in range(SIZE)]
 front = rear = -1
 
 if __name__ == '__main__': # 메인 시작
+
     while True:
         select = input('삽입(e), 추출(d), 확인(p), 종료(x)')
 
-        if select.lower():
+        if select.lower() == 'e':
             data = input('입력 데이터 > ')
             enQueue(data)
             print(f'큐상태 : {queue}')
@@ -70,23 +79,9 @@ if __name__ == '__main__': # 메인 시작
             data = peek()
             print(f'확인 데이터 > {data}')
             print(f'큐 상태 > {queue}')
+        elif select.lower() == 'x':
             break
         else:
             continue
 
 
-    # front = rear = -1
-
-    # print(queue)
-    # enQueue('선미')
-    # print(queue)
-    # enQueue('재남')
-
-    # queue = ['화사', None, None, None, None]
-    # front = -1
-    # rear = 0
-
-    # print(queue)
-    # print(deQueue())
-    # print(queue)
-    # print(deQueue())
