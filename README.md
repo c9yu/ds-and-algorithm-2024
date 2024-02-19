@@ -27,16 +27,35 @@
 
         ![stack](https://raw.githubusercontent.com/c9yu/ds-and-algorithm-2024/main/images/img001.png)
 
-## 4일차
+## 4일차(2024-02-15)
 - 파이썬 자료구조
-    - 큐 다시
-    - 트리
+    - 큐
+    - 이진 트리
+
+    ![이진트리](https://kahee.github.io//assets/post_img/tree3.png)
+
+## 5일차(2024-02-16)
+- 파이썬 자료구조 / 알고리즘
     - 그래프
+        - 깊이 우선 탐색의 작동(Depth First Search(DFS) -> Stack)
+        - 너비 우선 탐색의 작동(Breadth First Search(BFS) -> Queue)
 
-## 5일차
+    ![graph](https://raw.githubusercontent.com/c9yu/ds-and-algorithm-2024/main/images/img002.png)
 
-
-## 6일차
-
+## 6일차(2024-02-19)
+- 파이썬 자료구조 / 알고리즘
+    - 재귀호출
+    - 정렬
+        - 선택 정렬 Selection Sort : O(n^2)
+            - 최소값을 찾아서 맨 앞으로 보내는 것 
+        - 삽입 정렬 Insertion Sort : O(n^2)
+            - 기준값을 기준으로 앞 뒤로 보내는 것 
+        - 버블 정렬 Burble Sort : O(n^2)
+            - 기준값 기준으로 제일 큰 값을 뒤로 보내는 것
+        - 퀵 정렬 Quick Sort : O(nlogn)
+            - 기준값 기준으로 작은 값 그룹과, 큰 값 그룹을 분리한 뒤 다시 정렬 재귀 호출하는 것
 
 ## 7일차
+- 파이썬 자료구조 / 알고리즘
+    - 검색
+- 코딩테스트
