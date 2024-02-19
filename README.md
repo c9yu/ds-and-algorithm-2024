@@ -46,14 +46,16 @@
 - 파이썬 자료구조 / 알고리즘
     - 재귀호출
     - 정렬
-        - 선택 정렬 Selection Sort : O(n^2)
+        - 선택 정렬 Selection Sort
             - 최소값을 찾아서 맨 앞으로 보내는 것 
-        - 삽입 정렬 Insertion Sort : O(n^2)
+        - 삽입 정렬 Insertion Sort
             - 기준값을 기준으로 앞 뒤로 보내는 것 
-        - 버블 정렬 Burble Sort : O(n^2)
+        - 버블 정렬 Burble Sort
             - 기준값 기준으로 제일 큰 값을 뒤로 보내는 것
-        - 퀵 정렬 Quick Sort : O(nlogn)
+        - 퀵 정렬 Quick Sort
             - 기준값 기준으로 작은 값 그룹과, 큰 값 그룹을 분리한 뒤 다시 정렬 재귀 호출하는 것
+
+    ![graph](https://raw.githubusercontent.com/c9yu/ds-and-algorithm-2024/main/images/sorting.jpg)       
 
 ## 7일차
 - 파이썬 자료구조 / 알고리즘
